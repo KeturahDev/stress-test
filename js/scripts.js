@@ -28,6 +28,11 @@ $(document).ready(function () {
     console.log('medical array length', medicalSymptoms.length);
     console.log('coping array length', copingMethods.length);
 
+
+    // D E V E L O P E R S   N O T E 
+    //----------------------------------------
+    // bug @ high symptoms and high coping mechanisms. 
+
     if (allSymptoms.length > 6 && copingMethods.length < 3) {
       $('#output').text('Looks like your stressed, and you arent doing enough to conteract this. Lets get you some help. *insert links*')
     } else if (allSymptoms.length <= 6 && allSymptoms.length > 3 && copingMethods.length >= 3) {
